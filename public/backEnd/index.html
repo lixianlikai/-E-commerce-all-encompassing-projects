@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>乐淘云购后台管理系统</title>
+  <!-- 引入bootstrap库 -->
+  <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+  <!-- 引入NProgress -->
+  <link rel="stylesheet" href="./lib/nprogress/nprogress.css">
+  <!-- 引入表单验证插件的css -->
+  <link rel="stylesheet" href="./lib/bootstrap-validator/css/bootstrapValidator.min.css">
+  <!-- 引入当前页面的css -->
+  <link rel="stylesheet" href="./css/admin.css">
+</head>
+
+<body>
+  <!-- 侧边栏 -->
+  <aside class="lt_aside">
+    <!-- 商标 -->
+    <div class="brand">
+      <a href="javascript:;">ITCAST</a>
+    </div>
+    <!-- 用户 -->
+    <div class="user">
+      <img src="images/default.png" alt="" />
+      <span>超级管理员</span>
+    </div>
+    <!-- 菜单 -->
+    <div class="menu">
+      <ul>
+        <li>
+          <a href="###">
+            <span class="glyphicon glyphicon-user"></span> 用户管理</a>
+        </li>
+        <li>
+          <a href="javascript:;">
+            <span class="glyphicon glyphicon-list"></span> 分类管理</a>
+          <div class="child" style="display: none;">
+            <a href="###">一级分类</a>
+            <a href="###">二级分类</a>
+          </div>
+        </li>
+        <li>
+          <a href="###">
+            <span class="glyphicon glyphicon-tags"></span> 商品管理</a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+  <section class="lt_section">
+    <!-- 顶部导航 -->
+    <nav class="nav">
+      <a data-menu href="javascript:;"><span class="glyphicon glyphicon-align-justify"></span></a>
+      <a data-logout href="javascript:;"><span class="glyphicon glyphicon-log-out"></span></a>
+    </nav>
+    <div class="container-fluid">
+      <!--路径导航-->
+      <ol class="breadcrumb">
+          <li><a href="javascript:;">管理系统</a></li>
+          <li class="active">首页</li>
+      </ol>
+      <div class="lt_content">
+          <div class="picTable"></div>
+          <div class="picTable"></div>
+      </div>
+  </div>
+  </section>
+  <!-- 引入jquery -->
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <!-- 引入bootstrap的插件 -->
+  <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+  <!-- 引入echarts库 -->
+  <script src="./lib/echarts/echarts.min.js"></script>
+  <!-- 引入表单验证的插件 -->
+  <script src="./lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
+  <!-- 引入进度条插件 -->
+  <script src="./lib/nprogress/nprogress.js"></script>
+  <!-- 引入admin文件 -->
+  <script src="./js/admin.js"></script>
+  <!-- 引入index.js -->
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
