@@ -1,7 +1,7 @@
 // 该文件是用来写echarts这个图表的文件
 $(function () {
   // 获取盛柱状图的容器
-  var firstDom = document.querySelector('.lt_content .picTable:first-child');
+  var firstDom = document.querySelector('.lt-canvas .picTable:first-child');
 
 
   // 基于准备好的dom，初始化echarts实例
@@ -57,7 +57,7 @@ $(function () {
 
 
   // 饼图
-  var secondDom = document.querySelector('.lt_content .picTable:last-child');
+  var secondDom = document.querySelector('.lt-canvas .picTable:last-child');
   // 基于准备好的dom，初始化echarts实例
   var pieChart = echarts.init(secondDom);
 
