@@ -32,8 +32,8 @@ $(function(){
   $('#search-btn').on('tap',function(){
     var keyWord  = searchInput.val();
     setHistoryData(keyWord);
+    location.href = './searchList.html?proName='+keyWord;
     showHistoryData();
-
   })
 
   // 3.点击清空历史按钮 清空历史记录 
@@ -46,9 +46,16 @@ $(function(){
   $(".search-history-list").on('tap','i',function(){
     var deleteData = $(this).siblings('span').html();
       // console.log(deleteData);
-    
     removeHistoryData(deleteData);
     showHistoryData();
+  })
+
+  // 5.点击历史列表中的字 把这个字放到地址栏中跳转进行搜索
+  $('.search-history-list').on('tap','span',function(){
+    var keyWord = $(this).html();
+    // console.log(keyWord);
+    // 如何把当前页面的关键字传入searchList.html
+    location.href = './searchList.html?proName='+keyWord;
   })
 })
 
@@ -114,10 +121,8 @@ var showHistoryData = function(){
     });
 
     $('.search-history-list').html(historyList);
-    $('.search-history').show()
+    $('.search-history').show();
     $('.empty-history').hide();
-
-
   }
 }
 
